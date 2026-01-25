@@ -1,0 +1,75 @@
+*This project has been created as part of the 42 curriculum by ttamae.*
+
+# push_swap
+
+## Description
+
+The **push_swap** project is about sorting a stack of integers using a very limited set of operations and only two stacks: **stack A** and **stack B**.
+
+At the beginning, all numbers are placed in stack A and stack B is empty.  
+The goal is to sort stack A in ascending order while producing the smallest possible number of operations.
+
+To solve the problem, I chose to use the **Radix Sort** algorithm, adapting it to work with stacks and the limited set of operations allowed in the project.
+
+## Instructions
+
+### Compilation
+
+To compile the project, run:
+
+```bash
+make
+```
+This will generate the executable push_swap.
+
+You can also use the following commands:
+```bash
+make clean
+```
+Removes object files.
+
+```bash
+make fclean
+```
+Removes object files and the executable.
+
+```bash
+make re
+```
+Recompiles the project.
+
+### Execution
+
+The program takes integers as arguments.
+
+Example:
+```bash
+./push_swap 3 2 1
+```
+
+It also supports numbers passed as a string:
+```bash
+./push_swap "4 67 3 87 23"
+```
+The program outputs the list of operations needed to sort the stack to the standard output.
+
+### Error Handling
+The program prints ```Error``` and exits if:
+- No arguments are provided
+- An argument is not a valid integer
+- There are duplicated numbers
+- An integer overflow occurs
+- The input format is invalid
+
+## Resources
+
+- https://www.youtube.com/shorts/ZHjCj0Oz6hk  
+	A short video that helped me better visualize and understand the Radix Sort concept.
+
+- push_swap Visualizer (42):  
+  https://push-swap42-visualizer.vercel.app/
+	A visualizer used to better understand and test the behavior of the push_swap operations.
+
+- AI Usage - ChatGPT was used as a learning and support tool during the development of this project.  
+	It helped me clarify doubts about the push_swap rules, understand the Radix Sort algorithm, review edge cases.
+	All the implementation, logic decisions, and testing were done by me.
